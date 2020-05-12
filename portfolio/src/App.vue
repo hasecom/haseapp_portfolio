@@ -2,7 +2,7 @@
   <div id="app">
     <Header></Header>
     <div id="mokuji">
-      <Mokuji></Mokuji>
+      <Mokuji :siteinfo="siteInfo"></Mokuji>
     </div>
     <div id="profile">
       <Profile></Profile>
@@ -22,6 +22,9 @@ import Mokuji from "@/components/mokuji"
 import Production from "@/components/production"
 import Profile from "@/components/profile"
 import Skill from "@/components/skill"
+
+import * as siteInfo from "./assets/js/siteinfo.js"
+
 export default {
   name: 'App',
   components:{
@@ -30,10 +33,20 @@ export default {
     Production,
     Profile,
     Skill
+  },
+  data(){
+    return{
+      siteInfo:Object
+    }
+  },
+  created(){
+    this.siteInfo = siteInfo;
   }
 }
 </script>
 
 <style>
-
+body {
+  background:rgba(243,243,243);
+}
 </style>
