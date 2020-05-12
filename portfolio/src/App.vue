@@ -36,17 +36,45 @@ export default {
   },
   data(){
     return{
-      siteInfo:Object
+      siteInfo:Object,
+      width:window.innerWidth,
+      height:window.innerHeight
     }
   },
   created(){
     this.siteInfo = siteInfo;
+  },
+  mounted:function(){
+    window.addEventListener('resize', this.handleResize)
+  },
+  beforeDestroy:function(){
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize: function() {
+      this.width = window.innerWidth;
+      this.height = window.innerHeight;
+      }
+  },
+  computed:{
+    screenSize(){
+      return{
+        'width':this.width + "px",
+        'height':this.height + "px"
+      }
+    }
   }
 }
 </script>
 
 <style>
 body {
-  background:rgba(243,243,243);
+  background:#2d3436 !important;
+}
+#app {
+  background:rgba(243,243,243) !important;
+}
+.pointer{
+  cursor: pointer;
 }
 </style>

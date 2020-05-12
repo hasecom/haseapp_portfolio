@@ -11,5 +11,8 @@ export default {
 }
 </script>
 <style scoped>
-
+#header{
+    background:#2d3436;
+    color:#fff;
+}
 </style>
