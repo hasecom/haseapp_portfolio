@@ -1,9 +1,9 @@
 <template>
-    <div id="mokuji" class="row m-0">
-        <div class="col-3 font-weight-bold mokuji" v-for="item in siteinfo['siteInfo']" :key="item['param']">
-            <button class="btn rounded-pill">
-                {{item['name']}}
-            </button>
+    <div id="mokuji" class="container">
+        <div class="row">
+            <div class="col-4 font-weight-bold mokuji text-center" v-for="item in siteinfo['siteInfo']" :key="item['param']">
+                <router-link :to="item['path']" tag='button' class="btn rounded-pill" :style="selectPage(item['path'])">{{item['name']}}</router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -13,7 +13,26 @@ export default {
         siteinfo:{
             type:Object
         }
+    },
+    computed:{
+        selectPage:function(){
+            return function(path){
+                let rtnVal = [];
+                if(this.$route.path == path){
+                    rtnVal = {
+                        "background":"white"
+                    }
+                }else{
+                    rtnVal = {
+                        "background":"none",
+                        "color":"white"
+                    }
+                }
+                return rtnVal;
+            }
+        }
     }
+    
 }
 </script>
 <style scoped>
@@ -24,9 +43,9 @@ export default {
 }
 .mokuji{
     font-size:20px;
-    margin:5px;
 }
 .mokuji button{
     background:white;
+    color:#636e72;
 }
 </style>
