@@ -20,6 +20,7 @@ import Header from '@/components/header'
 import Mokuji from "@/components/mokuji"
 
 import * as siteInfo from "./assets/js/siteinfo.js"
+import * as myInfo from "./assets/js/myinfo.js"
 
 export default {
   name: 'App',
@@ -35,11 +36,13 @@ export default {
   data(){
     return{
       siteInfo:Object,
+      myInfo:Object,
       pageTitle:""
     }
   },
   created(){
     this.siteInfo = siteInfo;
+    this.myInfo = myInfo['myinfo'];
   },
   mounted(){
     this.changePath();
@@ -100,14 +103,14 @@ body::before {
   border-radius:0px 0px 30px 30px;
 }
 #content > div > div {
-  padding:0px 50px;
+  padding:25px 50px;
 }
 @media screen and (max-width:768px){ 
   #content{
       width:90%;
   }
   #content > div > div {
-    padding:0px 30px;
+    padding:10px 30px;
   }
   #content > .page_title {
   padding:0px 30px;
