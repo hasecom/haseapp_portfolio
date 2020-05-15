@@ -105,6 +105,13 @@ body::before {
 #content > div > div {
   padding:25px 50px;
 }
+#mokuji{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#mokuji::-webkit-scrollbar {
+  display:none;
+}
 @media screen and (max-width:768px){ 
   #content{
       width:90%;
