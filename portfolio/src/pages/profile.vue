@@ -5,7 +5,15 @@
                 <img class="icon" src="@/assets/images/icon.jpg" alt="">
             </div>
             <div class="col-md-6">
-                <p class="user_name text-md-left text-center">{{myinfo['name']}}</p>
+                <p class="user_name text-md-left text-center">
+                    <ruby>
+                        {{myinfo['name']}}<rt>{{myinfo['ruby']}}</rt>
+                    </ruby>
+                    ({{myinfo['age']}})
+                </p>
+                <p>
+                    {{myinfo['profile']}}
+                </p>
             </div>
         </div>
     </div>
@@ -26,16 +34,20 @@ export default {
 .icon{
     width:150px;
 }
+.iconWrap{
+    text-align: center;
+}
 .user_name{
     font-size:25px;
     font-weight:bold;
+    padding:15px 0px 15px 0px;
 }
 @media screen and (max-width:768px){ 
 .icon{
     width:130px;
 }
-.iconWrap{
-    text-align: center;
+.user_name{
+    font-size:18px;
 }
 }
 </style>

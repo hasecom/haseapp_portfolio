@@ -21,6 +21,7 @@ import Mokuji from "@/components/mokuji"
 
 import * as siteInfo from "./assets/js/siteinfo.js"
 import * as myInfo from "./assets/js/myinfo.js"
+import * as skillInfo from "./assets/js/skillinfo.js"
 
 export default {
   name: 'App',
@@ -37,12 +38,14 @@ export default {
     return{
       siteInfo:Object,
       myInfo:Object,
+      skillInfo:Object,
       pageTitle:""
     }
   },
   created(){
     this.siteInfo = siteInfo;
     this.myInfo = myInfo['myinfo'];
+    this.skillInfo = skillInfo['skillInfo']
   },
   mounted(){
     this.changePath();

@@ -1,0 +1,20 @@
+export let skillInfo = [
+    {
+        param:'vue',
+        subject:'vue',
+        practice:0,//実務
+        selfStudy:40,
+    },
+    {
+        param:'php',
+        subject:'php',
+        practice:0,//実務
+        selfStudy:40,
+    },
+    {
+        param:'JavaScript',
+        subject:'JavaScript',
+        practice:0,//実務
+        selfStudy:40,
+    }
+]
