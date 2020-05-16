@@ -3,18 +3,18 @@ export let skillInfo = [
         param:'vue',
         subject:'vue',
         practice:70,//実務
-        selfStudy:40,
+        selfStudy:30,
     },
     {
         param:'php',
         subject:'php',
-        practice:0,//実務
+        practice:15,//実務
         selfStudy:40,
     },
     {
         param:'JavaScript',
         subject:'JavaScript',
-        practice:0,//実務
+        practice:3,//実務
         selfStudy:40,
     }
 ]
