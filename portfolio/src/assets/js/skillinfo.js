@@ -4,17 +4,71 @@ export let skillInfo = [
         subject:'vue',
         practice:70,//実務
         selfStudy:30,
+        practicePeriod:'なし',
+        selfStudyPeriod:'1年3ヶ月',
+        type:''
+    },
+    {
+        param:'jQuery',
+        subject:'jQuery',
+        practice:30,//実務
+        selfStudy:10,
+        practicePeriod:'なし',
+        selfStudyPeriod:'1年3ヶ月',
+        type:''
     },
     {
         param:'php',
         subject:'php',
         practice:15,//実務
         selfStudy:40,
+        practicePeriod:'6ヶ月',
+        selfStudyPeriod:'3年',
+        type:''
     },
     {
         param:'JavaScript',
         subject:'JavaScript',
         practice:3,//実務
         selfStudy:40,
+        practicePeriod:'400年',
+        selfStudyPeriod:'XXX年',
+        type:''
+    },
+    {
+        param:'Csharp',
+        subject:'C#',
+        practice:13,//実務
+        selfStudy:42,
+        practicePeriod:'400年',
+        selfStudyPeriod:'XXX年',
+        type:''
+    },
+    {
+        param:'Git',
+        subject:'Git',
+        practice:3,//実務
+        selfStudy:40,
+        practicePeriod:'400年',
+        selfStudyPeriod:'XXX年',
+        type:''
+    },
+    {
+        param:'Python',
+        subject:'Python',
+        practice:3,//実務
+        selfStudy:40,
+        practicePeriod:'400年',
+        selfStudyPeriod:'XXX年',
+        type:''
+    },
+    {
+        param:'Linux',
+        subject:'Linux',
+        practice:3,//実務
+        selfStudy:40,
+        practicePeriod:'400年',
+        selfStudyPeriod:'XXX年',
+        type:''
     }
 ]

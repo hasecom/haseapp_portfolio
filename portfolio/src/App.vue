@@ -94,6 +94,7 @@ body::before {
     font-size:14px;
     border-radius: 30px;
     padding-top:15px;
+    margin-bottom:100px;
 }
 #content > .page_title {
   padding:0px 50px;
