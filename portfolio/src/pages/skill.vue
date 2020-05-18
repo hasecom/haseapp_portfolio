@@ -24,33 +24,20 @@ export default {
     },
     mounted() {
         this.skillInfo = this.$parent.skillInfo;
-        this.graph();
-
     },
     methods: {
-        graph: function () {
-            this.percent_set = this.skillInfo[0]['selfStudy'] + this.skillInfo[0]['practice']
-            let self = this;
-            self.timerObj = setInterval(function () {
-                self.percent_fill++
-                self.percent_none--
-                if ((self.percent_none == 0) || self.percent_fill == self.percent_set) {
-                    clearInterval(self.timerObj)
-                }
-            }, 10)
-        }
     },
     computed: {
         practiceScore: function(){
-            return function(){
-                let timeStrings = [this.percent_fill.toString(), this.percent_none.toString()]
+            return function(item){
+                let timeStrings = [item.practice.toString(), this.percent_none.toString()]
                 return timeStrings[0] + ',' + timeStrings[1]
             }
         },
         selfStudyScore: function (){
-            return function(){
-                //let displaySelfStudyScore = item['selfStudy'] + item['practice'];
-                let timeStrings = [this.percent_fill.toString(), this.percent_none.toString()]
+            return function(item){
+                let displaySelfStudyScore = item['selfStudy'] + item['practice'];
+                let timeStrings = [displaySelfStudyScore.toString(), this.percent_none.toString()]
                 return timeStrings[0] + ',' + timeStrings[1]
             }
         }
