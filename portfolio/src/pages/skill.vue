@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="row">
-        <div class="skillGraph col-6 col-md-3" v-for="item in skillInfo" :key="item['param']">
+        <div class="skillGraph col-6 col-md-4" v-for="item in skillInfo" :key="item['param']">
             <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg)">
                 <circle class="selfStudyCircle" :style="'--selfStudyScore:' + Number(item['practice']  + item['selfStudy']) + ' 100'" cx="30" cy="30" r="15" fill="rgba(0,0,0,0)" stroke="#ff7675" stroke-width="10" :stroke-dasharray="selfStudyScore(item)" />
                 <circle class="practiceCircle" :style="'--practiceScore:' +  Number(item['practice']) + ' 100'" cx="30" cy="30" r="15" fill="rgba(0,0,0,0)" stroke="#00b894" stroke-width="10" :stroke-dasharray="practiceScore(item)" />
@@ -64,6 +64,7 @@ export default {
 }
 .skillPeriod > ul {
   list-style: none;
+  padding:0px;
 }
 .skillPeriod > ul > li::before  {
     content:'■';
@@ -88,5 +89,10 @@ export default {
 }
 .practiceCircle {
     animation: practiceCircle 3s;
+}
+@media screen and (max-width:768px){ 
+    .skillPeriod > ul {
+        font-size:10px;
+    }
 }
 </style>

@@ -121,7 +121,7 @@ body::before {
       width:90%;
   }
   #content > div > div {
-    padding:10px 30px;
+    padding:10px 10px;
   }
   #content > .page_title {
   padding:0px 30px;

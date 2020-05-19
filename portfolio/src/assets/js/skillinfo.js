@@ -2,7 +2,7 @@ export let skillInfo = [
     {
         param:'vue',
         subject:'vue',
-        practice:70,//実務
+        practice:60,//実務
         selfStudy:30,
         practicePeriod:'なし',
         selfStudyPeriod:'1年3ヶ月',
