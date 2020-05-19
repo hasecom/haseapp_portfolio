@@ -65,6 +65,7 @@ export default {
 .skillPeriod > ul {
   list-style: none;
   padding:0px;
+  text-align: center;
 }
 .skillPeriod > ul > li::before  {
     content:'■';
