@@ -22,6 +22,7 @@ import Mokuji from "@/components/mokuji"
 import * as siteInfo from "./assets/js/siteinfo.js"
 import * as myInfo from "./assets/js/myinfo.js"
 import * as skillInfo from "./assets/js/skillinfo.js"
+import * as productionInfo from "./assets/js/productionInfo.js"
 
 export default {
   name: 'App',
@@ -39,6 +40,7 @@ export default {
       siteInfo:Object,
       myInfo:Object,
       skillInfo:Object,
+      productionInfo:Object,
       pageTitle:""
     }
   },
@@ -46,6 +48,7 @@ export default {
     this.siteInfo = siteInfo;
     this.myInfo = myInfo['myinfo'];
     this.skillInfo = skillInfo['skillInfo']
+    this.productionInfo = productionInfo['productionInfo'];
   },
   mounted(){
     this.changePath();
