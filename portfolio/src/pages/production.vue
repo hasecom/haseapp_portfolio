@@ -1,9 +1,9 @@
 <template>
 <div>
     <div class="production row">
-        <div class="productionCard col-md-6 col-12"  v-for="item in productionInfo" :key="item['param']">
+        <div class="productionCard col-md-6 col-12 shadow-sm"  v-for="item in productionInfo" :key="item['param']">
             <div class="mx-2 p-3">
-                <div class="thumbnail">
+                <div class="thumbnail pointer" @click="transformLink(item['url'])">
                     <img :src="imageLoad(item['imagePath'])" :alt="item['param']">
                 </div>
                 <div>
@@ -40,6 +40,9 @@ export default {
     methods: {
         imageLoad(fileName) {
             return require('../assets/images/' + fileName + '.jpg');
+        },
+        transformLink(url) {
+            open( url, "_blank" );
         }
     }
 }
@@ -55,10 +58,18 @@ export default {
 }
 .thumbnail{
     text-align:center;
+    overflow: hidden;
 }
 .thumbnail > img {
     width:150px;
     height:150px;
+	transition-duration: 0.3s;
+}
+.thumbnail img:hover {
+	transform: scale(2);
+    /*transform-origin:top; */
+	transition-duration: 0.3s;
+
 }
 .productionTags{
     display:inline;
