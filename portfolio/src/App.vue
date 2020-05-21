@@ -92,7 +92,7 @@ body::before {
 }
 #content{
     background:rgba(255,255,255,0.2);
-    width:60%;
+    width:80%;
     margin:0 auto;
     font-size:14px;
     border-radius: 30px;
@@ -127,7 +127,7 @@ body::before {
     padding:10px 10px;
   }
   #content > .page_title {
-  padding:0px 30px;
+    padding:0px 30px;
   }
 }
 </style>
