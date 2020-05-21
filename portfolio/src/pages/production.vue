@@ -14,7 +14,7 @@
                 </div>
                 <div class="productionTagsWrap">
                     <div class="productionTags px-1 py-1" v-for="tag in item['tags'].split(',').length" :key="tag">
-                        <div class="productionTag rounded-pill border d-inline-block px-2 py-1">
+                        <div class="productionTag rounded-pill d-inline-block px-2 py-1 my-1 small">
                                 {{item['tags'].split(',')[tag - 1]}}
                         </div>
                     </div>
@@ -63,7 +63,7 @@ export default {
     display:inline;
 }
 .productionTag{
-    background:#00b894;
-    color:white;
+    background:#dfe6e9;
+    color:#2d3436;
 }
 </style>
