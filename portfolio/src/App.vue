@@ -48,7 +48,7 @@ export default {
     this.siteInfo = siteInfo;
     this.myInfo = myInfo['myinfo'];
     this.skillInfo = skillInfo['skillInfo']
-    this.productionInfo = productionInfo['productionInfo'];
+    this.productionInfo = productionInfo;
   },
   mounted(){
     this.changePath();
