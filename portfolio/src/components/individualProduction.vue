@@ -1,12 +1,12 @@
 <template>
 <div class="production row">
-    <div class="productionCard col-md-6 col-12 shadow-sm" v-for="item in IndividualInfo" :key="item['param']">
+    <div class="productionCard col-md-6 col-12 shadow-sm my-2" v-for="item in IndividualInfo" :key="item['param']">
         <div class="mx-2 p-3">
             <div class="thumbnail pointer" @click="$parent.transformLink(item['url'])">
                 <img :src="$parent.imageLoad(item['imagePath'])" :alt="item['param']">
             </div>
             <div>
-                <div class="productionTitle text-center h3">
+                <div class="productionTitle text-center h4">
                     {{item['name']}}
                 </div>
                 <div class="productionDescription">
@@ -33,7 +33,6 @@ export default {
         }
     },
     mounted(){
-        console.log(this.$parent.imageLoad())
     }
 }
 </script>
@@ -51,15 +50,12 @@ export default {
     overflow: hidden;
 }
 .thumbnail > img {
-    width:150px;
     height:150px;
 	transition-duration: 0.3s;
 }
 .thumbnail img:hover {
 	transform: scale(2);
-    /*transform-origin:top; */
 	transition-duration: 0.3s;
-
 }
 .productionTags{
     display:inline;
@@ -67,6 +63,10 @@ export default {
 .productionTag{
     background:#dfe6e9;
     color:#2d3436;
+}
+.productionTitle{
+    font-weight:bold;
+    margin:15px 0px;
 }
 @media screen and (max-width:768px){ 
 .productionCard{

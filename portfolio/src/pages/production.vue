@@ -1,7 +1,7 @@
 <template>
 <div>
     <div>
-        <p class="productKindTitle h3">前職までの実績</p>
+        <p class="productKindTitle h3">実務</p>
         <Individual :IndividualInfo="individualInfo" />
     </div>
     <div>
@@ -34,7 +34,10 @@ export default {
             return require('../assets/images/' + fileName + '.jpg');
         },
         transformLink(url) {
-            open( url, "_blank" );
+            if(url != ""){
+                open( url, "_blank" );
+            }
+            return;
         }
     }
 }
@@ -42,7 +45,18 @@ export default {
 
 <style scoped>
 .productKindTitle { 
-    padding:10px 3px;
-    font-size:24px;
+    padding:10px 10px 10px 10px;
+    margin:15px 0px;
+    font-size:22px;
+    font-weight:bold;
+    background:rgba(116, 185, 255,1.0);
+    border-radius:15px;
+    display:inline-block;
+    color:white;
+}
+.productKindTitle::before { 
+    content: '●';
+    color: white;
+    margin-right: 8px;
 }
 </style>
