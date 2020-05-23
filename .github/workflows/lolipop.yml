@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - property:  npm i && npm run build
-        run: cd htdocs && npm i && npm run build
+      - name: npm install & npm run 
+        run: npm install && npm run prod
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
