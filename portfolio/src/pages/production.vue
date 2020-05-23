@@ -59,4 +59,5 @@ export default {
     color: white;
     margin-right: 8px;
 }
+
 </style>
