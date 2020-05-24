@@ -12,6 +12,9 @@
         </div>
       </div>
     </div>
+    <div id="bgImage">
+      <img src="./assets/images/background.png" alt="" srcset="">
+    </div>
   </div>
 </template>
 
@@ -66,26 +69,24 @@ export default {
 </script>
 
 <style>
-body {
-  background-image: url("./assets/images/background.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size:cover;
+#bgImage{
+
 }
-body::before {
-  content: '';
+#bgImage img{
+  position: fixed;
+  width:100%;
+  height:100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
   background: inherit;/*.bgImageで設定した背景画像を継承する*/
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
 }
 .pointer{
   cursor: pointer;
