@@ -15,9 +15,5 @@ export default [
     {
       path: '/production',
       component: Production
-    },
-    { 
-      path: '*', 
-      component: Profile 
     }
 ]

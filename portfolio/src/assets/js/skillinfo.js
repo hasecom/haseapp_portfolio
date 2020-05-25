@@ -1,74 +1,146 @@
 export let skillInfo = [
     {
-        param:'vue',
-        subject:'vue',
-        practice:60,//実務
-        selfStudy:30,
-        practicePeriod:'なし',
-        selfStudyPeriod:'1年3ヶ月',
-        type:''
-    },
-    {
-        param:'jQuery',
-        subject:'jQuery',
-        practice:30,//実務
-        selfStudy:10,
-        practicePeriod:'なし',
-        selfStudyPeriod:'1年3ヶ月',
-        type:''
-    },
-    {
-        param:'php',
-        subject:'php',
-        practice:15,//実務
+        param:'html',
+        subject:'html',
+        practice:20,//実務
         selfStudy:40,
         practicePeriod:'6ヶ月',
         selfStudyPeriod:'3年',
         type:''
     },
     {
+        param:'css',
+        subject:'css',
+        practice:20,//実務
+        selfStudy:40,
+        practicePeriod:'6ヶ月',
+        selfStudyPeriod:'3年',
+        type:''
+    },
+    {
+        param:'bootstrap',
+        subject:'bootstrap',
+        practice:0,//実務
+        selfStudy:40,
+        practicePeriod:'なし',
+        selfStudyPeriod:'1年6ヶ月',
+        type:''
+    },
+    {
         param:'JavaScript',
         subject:'JavaScript',
-        practice:3,//実務
+        practice:20,//実務
+        selfStudy:20,
+        practicePeriod:'4ヶ月',
+        selfStudyPeriod:'3年',
+        type:''
+    },
+    {
+        param:'vue',
+        subject:'vue',
+        practice:0,//実務
+        selfStudy:20,
+        practicePeriod:'なし',
+        selfStudyPeriod:'1年6ヶ月',
+        type:''
+    },
+    {
+        param:'jQuery',
+        subject:'jQuery',
+        practice:20,//実務
+        selfStudy:20,
+        practicePeriod:'4ヶ月',
+        selfStudyPeriod:'1年3ヶ月',
+        type:''
+    },
+    {
+        param:'php',
+        subject:'php',
+        practice:25,//実務
         selfStudy:40,
-        practicePeriod:'400年',
-        selfStudyPeriod:'XXX年',
+        practicePeriod:'6ヶ月',
+        selfStudyPeriod:'3年',
+        type:''
+    },
+    {
+        param:'Laravel',
+        subject:'Laravel',
+        practice:0,//実務
+        selfStudy:15,
+        practicePeriod:'なし',
+        selfStudyPeriod:'5ヶ月',
         type:''
     },
     {
         param:'Csharp',
         subject:'C#',
-        practice:13,//実務
-        selfStudy:42,
-        practicePeriod:'400年',
-        selfStudyPeriod:'XXX年',
+        practice:15,//実務
+        selfStudy:10,
+        practicePeriod:'4ヶ月',
+        selfStudyPeriod:'6ヶ月',
         type:''
     },
     {
-        param:'Git',
-        subject:'Git',
-        practice:3,//実務
-        selfStudy:40,
-        practicePeriod:'400年',
-        selfStudyPeriod:'XXX年',
+        param:'ASPMVC',
+        subject:'ASP.NET MVC(C#)',
+        practice:15,//実務
+        selfStudy:0,
+        practicePeriod:'4ヶ月',
+        selfStudyPeriod:'なし',
         type:''
     },
     {
         param:'Python',
         subject:'Python',
-        practice:3,//実務
-        selfStudy:40,
-        practicePeriod:'400年',
-        selfStudyPeriod:'XXX年',
+        practice:0,//実務
+        selfStudy:35,
+        practicePeriod:'なし',
+        selfStudyPeriod:'1年',
+        type:''
+    },
+    {
+        param:'swift',
+        subject:'Swift',
+        practice:0,//実務
+        selfStudy:20,
+        practicePeriod:'なし',
+        selfStudyPeriod:'6ヶ月',
+        type:''
+    },
+    {
+        param:'mysql',
+        subject:'mysql',
+        practice:30,//実務
+        selfStudy:10,
+        practicePeriod:'2ヶ月',
+        selfStudyPeriod:'２年6ヶ月',
+        type:''
+    },
+    {
+        param:'Oracle Database',
+        subject:'Oracle Database',
+        practice:30,//実務
+        selfStudy:0,
+        practicePeriod:'4ヶ月',
+        selfStudyPeriod:'なし',
+        type:''
+    },
+    {
+        param:'Git',
+        subject:'Git',
+        practice:30,//実務
+        selfStudy:20,
+        practicePeriod:'6ヶ月',
+        selfStudyPeriod:'1年6ヶ月',
         type:''
     },
     {
         param:'Linux',
         subject:'Linux',
-        practice:3,//実務
-        selfStudy:40,
-        practicePeriod:'400年',
-        selfStudyPeriod:'XXX年',
+        practice:10,//実務
+        selfStudy:25,
+        practicePeriod:'2ヶ月',
+        selfStudyPeriod:'4ヶ月',
         type:''
     }
 ]

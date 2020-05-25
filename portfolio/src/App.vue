@@ -11,6 +11,9 @@
           <router-view></router-view>
         </div>
       </div>
+      <div id="footer">
+
+      </div>
     </div>
     <div id="bgImage">
       <img src="./assets/images/background.png" alt="" srcset="">
@@ -111,7 +114,7 @@ export default {
   border-radius:0px 0px 30px 30px;
 }
 #content > div > div {
-  padding:25px 50px;
+  padding:50px 50px;
 }
 #mokuji{
   -ms-overflow-style: none;
@@ -120,12 +123,17 @@ export default {
 #mokuji::-webkit-scrollbar {
   display:none;
 }
+#footer{
+  width:100%;
+  height:350px;
+  background:#2d3436;
+}
 @media screen and (max-width:768px){ 
   #content{
       width:90%;
   }
   #content > div > div {
-    padding:10px 10px;
+    padding:25px 10px;
   }
   #content > .page_title {
     padding:0px 30px;
