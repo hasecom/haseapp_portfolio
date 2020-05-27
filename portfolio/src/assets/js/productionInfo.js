@@ -1,7 +1,7 @@
 export let individualInfo = [
             {
                 'param':'飲食店掲載サイトの無料掲載機能',
-                'name':'飲食店掲載サイトの無料掲載機能',
+                'name':'飲食店掲載サイトの無料会員掲載機能',
                 'imagePath':'noImage',
                 'url':'',
                 'description':'施設様が会員登録をすることで上位表示や飲食店情報を更新、さらに充実したコンテンツを利用できるサービスです。',
@@ -17,6 +17,14 @@ export let individualInfo = [
             }
 ]
 export let organizationInfo = [
+            {
+                'param':'portfolio',
+                'name':'ポートフォリオ',
+                'imagePath':'product08',
+                'url':'https://haseapp.com',
+                'description':'ポートフォリオまとめサイトです。',
+                'tags':'Vue.js'
+            },
             {
                 'param':'livethread',
                 'name':'ライブ スレッド',

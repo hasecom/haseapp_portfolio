@@ -14,6 +14,16 @@
                 <p>
                     {{myinfo['profile']}}
                 </p>
+                <div>
+                    <div class="hobby_title">
+                        <p>趣味・最近ハマっていること<font-awesome-icon icon="chevron-right" class="pl-1" /></p>
+                    </div>
+                    <div class="hobbyTags px-1 py-1" v-for="tag in myinfo['hobby'].split(',').length" :key="tag">
+                        <div class="hobbyTag rounded-pill d-inline-block px-2 py-1 my-1 small">
+                            {{myinfo['hobby'].split(',')[tag - 1]}}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -41,6 +51,21 @@ export default {
     font-size:25px;
     font-weight:bold;
     padding:15px 0px 15px 0px;
+}
+.hobby_title p{
+    color:white;
+    background:#2d3436;
+    display:inline-block;
+    border-radius: 15px;
+    padding:3px 10px;
+    font-size:16px;
+}
+.hobbyTags{
+    display:inline;
+}
+.hobbyTag{
+    background:#dfe6e9;
+    color:#2d3436;
 }
 @media screen and (max-width:768px){ 
 .icon{
