@@ -90,6 +90,15 @@ export let skillInfo = [
         type:''
     },
     {
+        param:'RubyOnRails',
+        subject:'Ruby on Rails',
+        practice:15,//実務
+        selfStudy:5,
+        practicePeriod:'2ヶ月',
+        selfStudyPeriod:'なし',
+        type:''
+    },
+    {
         param:'Python',
         subject:'Python',
         practice:0,//実務

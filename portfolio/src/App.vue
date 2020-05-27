@@ -12,7 +12,7 @@
         </div>
       </div>
       <div id="footer">
-
+        <Footer :footerInfo="footerInfo"></Footer>
       </div>
     </div>
     <div id="bgImage">
@@ -24,17 +24,21 @@
 <script>
 import Header from '@/components/header'
 import Mokuji from "@/components/mokuji"
+import Footer from "@/components/footer"
 
 import * as siteInfo from "./assets/js/siteinfo.js"
 import * as myInfo from "./assets/js/myinfo.js"
 import * as skillInfo from "./assets/js/skillinfo.js"
 import * as productionInfo from "./assets/js/productionInfo.js"
+import * as footerInfo from "./assets/js/footerinfo.js"
+
 
 export default {
   name: 'App',
   components:{
     Header,
-    Mokuji
+    Mokuji,
+    Footer
   },
   watch: {
     '$route' () {
@@ -47,14 +51,16 @@ export default {
       myInfo:Object,
       skillInfo:Object,
       productionInfo:Object,
+      footerInfo:Object,
       pageTitle:""
     }
   },
   created(){
     this.siteInfo = siteInfo;
     this.myInfo = myInfo['myinfo'];
-    this.skillInfo = skillInfo['skillInfo']
+    this.skillInfo = skillInfo['skillInfo'];
     this.productionInfo = productionInfo;
+    this.footerInfo = footerInfo;
   },
   mounted(){
     this.changePath();
@@ -72,9 +78,6 @@ export default {
 </script>
 
 <style>
-#bgImage{
-
-}
 #bgImage img{
   position: fixed;
   width:100%;
