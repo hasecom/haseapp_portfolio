@@ -1,15 +1,28 @@
 <template>
-    <div class="text-white">{{footerInfo}}</div>
+    <div>
+        <div class="text-white" v-for="item in footerinfo" :key="item['param']">
+            {{item['name']}}
+        </div>
+    </div>
 </template>
 <script>
 export default {
     props:{
-        footerInfo:{
+        footerinfo:{
             type:Object
         }
     },
+    data(){
+        return {
+            "fontawesomeArr":{
+                'github':'',
+                'twitter':'',
+                'contact':''
+            }
+        }
+    },
     mounted(){
-        console.log(this.footerInfo['footerInfo'])
+        console.log(this.footerinfo)
     }
 }
 </script>

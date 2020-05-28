@@ -12,7 +12,7 @@
         </div>
       </div>
       <div id="footer">
-        <Footer :footerInfo="footerInfo"></Footer>
+        <Footer :footerinfo="footerInfo"></Footer>
       </div>
     </div>
     <div id="bgImage">
@@ -60,7 +60,7 @@ export default {
     this.myInfo = myInfo['myinfo'];
     this.skillInfo = skillInfo['skillInfo'];
     this.productionInfo = productionInfo;
-    this.footerInfo = footerInfo;
+    this.footerInfo = footerInfo['footerinfo'];
   },
   mounted(){
     this.changePath();
@@ -130,6 +130,7 @@ export default {
   width:100%;
   height:350px;
   background:#2d3436;
+  padding:30px 20%;
 }
 @media screen and (max-width:768px){ 
   #content{
@@ -140,6 +141,9 @@ export default {
   }
   #content > .page_title {
     padding:0px 30px;
+  }
+  #footer{
+    padding:30px 10%;
   }
 }
 </style>

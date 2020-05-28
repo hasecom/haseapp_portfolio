@@ -1,4 +1,20 @@
-export let footerinfo = 
+export let footerinfo = [
     {
-        githubAccount:"hasecom"
+        param:'github',
+        name:'github',
+        id:'hasecom',
+        path:'/',
+    },
+    {
+        param:'Twitter',
+        name:'Twitter',
+        id:'hase_engineer',
+        path:'/'
+    },
+    {
+        param:'contact',
+        name:'連絡先',
+        id:'hasegawa0502taku@gmail.com',
+        path:'/',
     }
+]
