@@ -26,11 +26,19 @@ export let organizationInfo = [
                 'tags':'Vue.js'
             },
             {
+                'param':'slander',
+                'name':'炎上・誹謗中傷疑似体験サービス',
+                'imagePath':'product09',
+                'url':'https://slander-app.herokuapp.com/#/',
+                'description':'このサービスは、普段使っているSNSで 起うる炎上・誹謗中傷を擬似的に 体験することができます。(スマホ対応) ',
+                'tags':'PHP,Vue.js,jQuery,css,mysql,bootstrap,SPA'
+            },
+            {
                 'param':'livethread',
                 'name':'ライブ スレッド',
                 'imagePath':'product06',
                 'url':'https://livethread.net',
-                'description':'ライブスレッドは、アーティストやコンサート情報をシェアできるチャットルームサービスです。',
+                'description':'ライブスレッドは、アーティストやコンサート情報をシェアできるチャットルームサービスです。(スマホ対応)',
                 'tags':'PHP,Vue.js,jQuery,css,mysql,Oauth'
             },
             {

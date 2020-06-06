@@ -25,7 +25,7 @@
           <div class="introduction_title">
             <p>好き・尊敬する方<font-awesome-icon icon="chevron-right" class="pl-1" /></p>
           </div>
-          <div class="hobbyTags px-1 py-1" v-for="tag in (myinfo['hobby'] || '').split(',')" :key="tag">
+          <div class="hobbyTags px-1 py-1" v-for="tag in (myinfo['respect'] || '').split(',')" :key="tag">
             <div class="hobbyTag rounded-pill d-inline-block px-2 py-1 my-1 small">{{tag}}</div>
           </div>
         </div>

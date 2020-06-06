@@ -47,11 +47,11 @@ export default {
   },
   data(){
     return{
-      siteInfo:Object,
-      myInfo:Object,
-      skillInfo:Object,
-      productionInfo:Object,
-      footerInfo:Object,
+      siteInfo:[],
+      myInfo:[],
+      skillInfo:[],
+      productionInfo:[],
+      footerInfo:[],
       pageTitle:""
     }
   },
