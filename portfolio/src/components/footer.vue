@@ -1,7 +1,10 @@
 <template>
     <div>
-        <div class="text-white" v-for="item in footerinfo" :key="item['param']">
-            {{item['name']}}
+        <div class="text-white footer_info" v-for="item in footerinfo" :key="item['param']"> 
+            <a :href="item['path']" target="_blank">
+                <font-awesome-icon :icon="fontawesomeArr[item['param']]" class="pr-1" />
+                {{item['name']}}
+            </a>
         </div>
     </div>
 </template>
@@ -14,18 +17,24 @@ export default {
     },
     data(){
         return {
-            "fontawesomeArr":{
-                'github':'',
-                'twitter':'',
-                'contact':''
+            fontawesomeArr:{
+                'github':['fab', 'github'],
+                'Twitter':['fab', 'twitter'],
+                'contact':'envelope'
             }
         }
     },
     mounted(){
-        console.log(this.footerinfo)
     }
 }
 </script>
 <style scoped>
-
+.footer_info{
+    text-align: center;
+    padding:5px 0px;
+    font-size:23px;
+}
+.footer_info a{
+    color:white;
+}
 </style>

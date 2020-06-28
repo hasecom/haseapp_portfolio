@@ -3,18 +3,18 @@ export let footerinfo = [
         param:'github',
         name:'github',
         id:'hasecom',
-        path:'/',
+        path:'https://github.com/hasecom',
     },
     {
         param:'Twitter',
         name:'Twitter',
         id:'hase_engineer',
-        path:'/'
+        path:'https://twitter.com/hase_engineer'
     },
     {
         param:'contact',
-        name:'連絡先',
+        name:'contact',
         id:'hasegawa0502taku@gmail.com',
-        path:'/',
+        path:'mailto:hasegawa0502taku@gmail.com',
     }
 ]
