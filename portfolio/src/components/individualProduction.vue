@@ -9,8 +9,13 @@
                 <div class="productionTitle text-center h4">
                     {{item['name']}}
                 </div>
+                <div class="small text-right">{{item['date']}}</div>
                 <div class="productionDescription">
                     {{item['description']}}
+                </div>
+                <div>
+                    <div class="learnTitle">学び</div>
+                    <div>{{item['learn']}}</div>
                 </div>
                 <div class="productionTagsWrap">
                     <div class="productionTags px-1 py-1" v-for="tag in item['tags'].split(',').length" :key="tag">
@@ -67,6 +72,12 @@ export default {
 .productionTitle{
     font-weight:bold;
     margin:15px 0px;
+}
+.learnTitle{
+    font-weight: bold;
+    font-size:20px;
+    padding:20px 0px 5px 0px;
+    color:#74b9ff;
 }
 @media screen and (max-width:768px){ 
 .productionCard{
