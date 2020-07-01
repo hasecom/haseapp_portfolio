@@ -13,7 +13,7 @@
                 <div class="productionDescription">
                     {{item['description']}}
                 </div>
-                <div>
+                <div class="pb-3">
                     <div class="learnTitle">学び</div>
                     <div>{{item['learn']}}</div>
                 </div>
