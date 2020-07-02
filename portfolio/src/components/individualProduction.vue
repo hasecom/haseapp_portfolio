@@ -2,7 +2,7 @@
 <div class="production row">
     <div class="productionCard col-md-6 col-12 shadow-sm my-2" v-for="item in IndividualInfo" :key="item['param']">
         <div class="mx-2 p-3">
-            <div class="thumbnail pointer" @click="$parent.transformLink(item['url'])">
+            <div class="thumbnail" :class="item['url'] != '' ? 'pointer' :''" @click="$parent.transformLink(item['url'])">
                 <img :src="$parent.imageLoad(item['imagePath'])" :alt="item['param']">
             </div>
             <div>

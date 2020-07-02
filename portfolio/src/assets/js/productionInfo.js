@@ -137,6 +137,21 @@ export let organizationInfo = [
                 'tags':'Python,Flask,Oauth,Docker,GCP,Cloud run'
             },
             {
+                'param':'HaseFrameWork',
+                'name':'HaseFrameWork',
+                'imagePath':'noImage',
+                'url':'https://github.com/hasecom/HaseFramework',
+                'date':'2019年',
+                'learn':`
+                フレームワークと呼べるようなモノではありませんが、フレームワークがどのようなものか、
+                今後プロダクトを作るときに使いまわせるのでは？と思い作成しました。今までバラバラに書いていた
+                処理を共通化するなど新しい発見がありました。フレームワークは、学習コストが高いですが、
+                慣れてしまえば、かなり便利に使えると改めて感じました。
+                `,
+                'description':'FrameWorkを作りました。',
+                'tags':'php'
+            },
+            {
                 'param':'hasethblog',
                 'name':'暇人のブログ',
                 'imagePath':'product01',
