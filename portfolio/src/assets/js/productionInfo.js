@@ -155,7 +155,7 @@ export let organizationInfo = [
                 'param':'hasethblog',
                 'name':'暇人のブログ',
                 'imagePath':'product01',
-                'url':'https:/hasethblog.com',
+                'url':'https://hasethblog.com',
                 'date':'2017年〜',
                 'learn':`小さい頃からブログをやった経験がありましたが、
                 "お金を稼ぐ"ことを目的としたサービスは初めてで、
