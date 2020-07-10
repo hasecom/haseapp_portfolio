@@ -52,22 +52,6 @@
             </div>
             {{myinfo['pros_and_cons']}}
         </div>
-        <div>
-            <div class="_title">
-                <p>周りから見た私
-                    <font-awesome-icon icon="chevron-right" class="pl-1" />
-                </p>
-            </div>
-            {{myinfo['objective']}}
-        </div>
-        <div>
-            <div class="_title">
-                <p>こんなところで働きたい
-                    <font-awesome-icon icon="chevron-right" class="pl-1" />
-                </p>
-            </div>
-            {{myinfo['work']}}
-        </div>
     </div>
 </div>
 </template>
